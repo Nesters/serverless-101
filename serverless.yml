@@ -1,0 +1,9 @@
+service: serverless-101
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  hello:
+    handler: functions/hello-world.main
