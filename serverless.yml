@@ -7,3 +7,5 @@ provider:
 functions:
   hello:
     handler: functions/hello-world.main
+  event-horizon:
+    handler: functions/event-machine.main

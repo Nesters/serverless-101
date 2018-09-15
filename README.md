@@ -7,11 +7,12 @@
 First, install Serverless framework:
 `npm install -g serverless`
 
-Now let's create a Serverless boilerplate:
+Now you can use `serverless` (shorthand: `sls`) CLI to manage your Serverless functions.
+
+Let's create a Serverless boilerplate template for a Node.js function:
 `serverless create --template aws-nodejs --path <directory name for your project>`
 
 You can find all of the available template [here](https://github.com/serverless/serverless/tree/master/lib/plugins/create/templates)
-
 
 ## Create your own functions
 
@@ -24,3 +25,6 @@ Open **serverless.yml** and define your function under the functions block.
 
 Now you can invoke your Lambda function locally:
 `serverless invoke local -f <function name>`
+
+There's more advanced stuff you can do here, like passing input data to the Lambda function:
+`serverless invoke local -f <function name> -p assets/event.json`

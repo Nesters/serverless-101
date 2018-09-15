@@ -1,0 +1,10 @@
+{
+  "event": {
+    "id": 1,
+    "name": "Happened!"
+  },
+  "not so much event": {
+    "id": 2,
+    "name": "404"
+  }
+}
